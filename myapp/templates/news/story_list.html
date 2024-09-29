@@ -1,8 +1,0 @@
-{% for story in story_list %}
-<h2>
-  <a href="{% url 'story_detail' story.id %}">
-    {{ story.headline }}
-  </a>
-</h2>
-<p>{{ story.tease|truncatewords:"100" }}</p>
-{% endfor %}
